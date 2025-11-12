@@ -27,7 +27,7 @@ export default function TOC() {
       </Nav.Item>
       <Nav.Item>
         <Nav.Link
-          href="https://github.com/sychan91/kambaz-react-web-app-cs5610-sp25/tree/main"
+          href="https://github.com/Zexsteel900/kambaz-app1"
           active={false}
         >
           React Github Repo
@@ -35,7 +35,7 @@ export default function TOC() {
       </Nav.Item>
       <Nav.Item>
         <Nav.Link
-          href="https://github.com/sychan91/kambaz-node-server-app.git"
+          href="https://github.com/Zexsteel900/kambaz-node-server-app"
           active={false}
         >
           Server Github Repo

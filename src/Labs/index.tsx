@@ -12,7 +12,7 @@ export default function Labs() {
   return (
     <Provider store={store}>
       <div id="wd-labs">
-        <h1>Sai Yin Chan, Section 01</h1>
+        <h1>Jeet Narkhede</h1>
         <h1>Labs</h1>
         <TOC />
         <Routes>
