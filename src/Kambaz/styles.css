@@ -1,0 +1,150 @@
+/* Font Size Rules */
+.wd-f-very-small {
+    font-size: 12px;
+}
+
+.wd-f-small {
+    font-size: 14px;
+}
+
+.wd-f-med {
+    font-size: 15px;
+}
+
+/* Icon Size, Pos, & Color Rules */
+.wd-icon-red {
+    color: red;
+}
+
+.wd-icon-md {
+    font-size: 1.5rem;
+}
+
+.wd-icon-lg {
+    font-size: 2.5rem;
+}
+
+.wd-logo-sm {
+    width: 65px;
+    height: 'auto';
+}
+
+.wd-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media Queries to apply offset to Kambaz Nav Bar */
+@media (min-width: 768px) {
+    #wd-kambaz .wd-main-content-offset {
+        padding-left: 100px !important;
+    }
+}
+
+/* Card Rules */
+.wd-dashboard-course .card-body button {
+    align-self: flex-start;
+    width: auto;
+}
+
+/* Course Nav Rules */
+.list-group.wd > .list-group-item.active {
+    color: black !important;;
+    background-color: white;
+    border-left: 2px solid black !important;
+}
+
+/* Spacing between course nav items */
+#wd-courses-navigation .list-group-item {
+    margin-bottom: 0px;
+    padding: 5px;
+}
+
+/* Spacing between account nav items */
+#wd-account-navigation .list-group-item {
+    margin-bottom: 0px;
+    padding: 5px;
+}
+
+/* Top Padding */
+.wd-top-padding {
+    padding-top: 50px;
+}
+
+.wd-top-padding-20 {
+    padding-top: 20px;
+}
+
+
+/* Module padding */
+.wd-module-padding {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.wd-module-control-padding {
+    padding-right: 40px;
+}
+
+.wd-padding-right {
+    padding-right: 30px;
+}
+
+.btn-secondary {
+    --bs-btn-color: #000 !important;
+    --bs-btn-bg: #c7cdd1 !important;
+    --bs-btn-border-color: #c7cdd1
+    !important;
+    --bs-btn-hover-color: #fff !important;
+    }
+    .bg-secondary {
+    --bs-secondary-rgb: 199, 205, 209;
+    }
+    .list-group-item {
+    --bs-list-group-border-color: gray;
+    }
+    .wd-lesson {
+        border-left: 3px solid green !important;
+    }
+
+/* Account componenet width */
+.wd-account-component-width {
+    width: 250px;
+}
+
+/*Account bottom padding */
+.wd-acc-margin-spacing {
+    margin-bottom: 10px;
+}
+
+/* Assignment Screen Rules */
+.wd-assignment-padding {
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 40px;
+}
+
+.wd-assignment-f-small {
+    font-size: 12px;
+}
+
+.wd-thin-black-border {
+    border-color: black !important;
+    border-width: 1px !important;
+}
+
+.wd-search-bar-padding {
+    padding-left: 20px;
+}
+
+/* Assignment Editor Rules */
+.wd-form-element-size-align {
+    width: 400px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+}
