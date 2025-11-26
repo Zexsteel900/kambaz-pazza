@@ -2,6 +2,7 @@ import axios from "axios";
 
 export const REMOTE_SERVER = import.meta.env.VITE_REMOTE_SERVER;
 export const USERS_API = `${REMOTE_SERVER}/api/users`;
+export const COURSES_API = `${REMOTE_SERVER}/api/courses`;
 
 const axiosWithCredentials = axios.create({
   withCredentials: true,
@@ -62,11 +63,9 @@ export const findMyCourses = async () => {
   return data;
 };
 
+// ✅ FIXED: Create course should use /api/courses, not /api/users/current/courses
 export const createCourse = async (course: any) => {
-  const { data } = await axiosWithCredentials.post(
-    `${USERS_API}/current/courses`,
-    course
-  );
+  const { data } = await axiosWithCredentials.post(COURSES_API, course);
   return data;
 };
 

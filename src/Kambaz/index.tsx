@@ -47,7 +47,6 @@ export default function Kambaz() {
     }
   }, [currentUser]);
   const [course, setCourse] = useState<any>({
-    _id: "0",
     name: "New Course",
     number: "New Number",
     image: "/images/reactjs.jpg",
