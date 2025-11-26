@@ -2,11 +2,13 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import Signin from "./Signin";
 import Signup from "./Signup";
 import Profile from "./Profile";
+import Users from "./Users/page";
 import AccountNavigation from "./Navigation";
 import { useSelector } from "react-redux";
 
 export default function Account() {
   const { currentUser } = useSelector((state: any) => state.accountReducer);
+
   return (
     <div id="wd-account-screen" className="d-flex">
       <div className="wd-account-nav wd-padding-right wd-top-padding-20">
@@ -29,6 +31,17 @@ export default function Account() {
           <Route path="Signin" element={<Signin />} />
           <Route path="Signup" element={<Signup />} />
           <Route path="Profile" element={<Profile />} />
+          {/* Always include Users route */}
+          <Route
+            path="Users"
+            element={
+              currentUser?.role === "ADMIN" ? (
+                <Users />
+              ) : (
+                <Navigate to="/Kambaz/Account/Profile" />
+              )
+            }
+          />
         </Routes>
       </div>
     </div>
