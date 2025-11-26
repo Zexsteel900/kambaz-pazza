@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
 import { FaPlus } from "react-icons/fa";
 import PeopleTable from "../../Courses/People/Table";
 import PeopleDetails from "../../Courses/People/Details";
@@ -9,7 +8,6 @@ import * as client from "../client";
 import { FormControl } from "react-bootstrap";
 
 export default function Users() {
-  const { uid } = useParams();
   const [users, setUsers] = useState<any[]>([]);
   const [role, setRole] = useState("");
   const [name, setName] = useState("");
@@ -67,24 +65,24 @@ export default function Users() {
   // Create a new user
   // ----------------------
   const createUser = async () => {
-  try {
-    const user = await client.createUser({
-      firstName: "New",
-      lastName: `User${users.length + 1}`,
-      username: `newuser${Date.now()}`, // guaranteed unique
-      password: "password123",
-      email: `email${Date.now()}@neu.edu`,
-      section: "S101",
-      role: "STUDENT",
-    });
+    try {
+      const user = await client.createUser({
+        firstName: "New",
+        lastName: `User${users.length + 1}`,
+        username: `newuser${Date.now()}`,
+        password: "password123",
+        email: `email${Date.now()}@neu.edu`,
+        section: "S101",
+        role: "STUDENT",
+      });
 
-    setUsers([...users, user]);
-  } catch (err: any) {
-    console.error("Failed to create user:", err);
-    alert(err?.response?.data?.message || err.message);
-    fetchUsers(); // reload table so existing users show
-  }
-};  
+      setUsers([...users, user]);
+    } catch (err: any) {
+      console.error("Failed to create user:", err);
+      alert(err?.response?.data?.message || err.message);
+      fetchUsers();
+    }
+  };
 
   useEffect(() => {
     fetchUsers();

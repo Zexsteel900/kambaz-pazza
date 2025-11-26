@@ -2,9 +2,7 @@ import { ListGroup } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-interface AccountNavigationProps {}
-
-export default function AccountNavigation(props: AccountNavigationProps) {
+export default function AccountNavigation() {
   const { currentUser } = useSelector((state: any) => state.accountReducer);
   const { pathname } = useLocation();
 
@@ -22,7 +20,7 @@ export default function AccountNavigation(props: AccountNavigationProps) {
             key={link}
             as={Link}
             to={linkPath}
-            active={pathname === linkPath} // exact match for active
+            active={pathname === linkPath}
             className="border-0 text-danger bg-color-white"
             style={{ textDecoration: "none" }}
           >
