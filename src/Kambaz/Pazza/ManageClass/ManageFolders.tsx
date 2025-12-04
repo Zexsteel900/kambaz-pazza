@@ -66,7 +66,8 @@ export default function ManageFolders() {
       return;
     }
     try {
-      await client.updateFolder(folderId, editingName.trim());
+      await client.deleteFolder(folderId);
+      await client.createFolder(cid || "current", editingName.trim());
       cancelEdit();
       load();
     } catch (e) {
