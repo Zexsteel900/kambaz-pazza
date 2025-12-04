@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Button } from "react-bootstrap";
 import ReactQuill from "react-quill";
 import client from "../client";

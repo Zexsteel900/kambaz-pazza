@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import { useState, useMemo } from "react";
 import { FormControl, Button } from "react-bootstrap";
 import PostsList from "./PostsList";
 import NewPostButton from "./NewPostButton";

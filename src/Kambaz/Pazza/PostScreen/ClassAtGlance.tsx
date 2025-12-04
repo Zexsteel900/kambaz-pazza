@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import { useMemo } from "react";
 import { Card, Row, Col, Badge } from "react-bootstrap";
 
 interface ClassAtGlanceProps {

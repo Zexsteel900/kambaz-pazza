@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import { useMemo } from "react";
 import { ListGroup, Badge, Accordion } from "react-bootstrap";
 import { format, isToday, isYesterday, startOfWeek, endOfWeek } from "date-fns";
 

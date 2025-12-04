@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Card, Badge, Dropdown, Button } from "react-bootstrap";
 import AnswerEditor from "./AnswerEditor";
 import Followups from "./Followups";

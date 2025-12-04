@@ -1,4 +1,3 @@
-import React from "react";
 import { useParams, useNavigate, useLocation } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import { useSelector } from "react-redux";
