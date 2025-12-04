@@ -66,10 +66,7 @@ export default function ManageFolders() {
       return;
     }
     try {
-      // Note: You'll need to add updateFolder to your client
-      // For now, we'll just cancel the edit
-      // await client.updateFolder(folderId, editingName.trim());
-      alert("Edit functionality not yet implemented in backend");
+      await client.updateFolder(folderId, editingName.trim());
       cancelEdit();
       load();
     } catch (e) {

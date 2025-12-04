@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Card, Badge, Dropdown, Button } from "react-bootstrap";
+import { Card, Badge, Dropdown} from "react-bootstrap";
 import AnswerEditor from "./AnswerEditor";
 import Followups from "./Followups";
 import client from "../client";

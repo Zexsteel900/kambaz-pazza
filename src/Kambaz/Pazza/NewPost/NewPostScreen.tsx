@@ -14,7 +14,7 @@ export default function NewPostScreen() {
   const [folders, setFolders] = useState<string[]>([]);
   const [availableFolders, setAvailableFolders] = useState<any[]>([]);
   const [postTo, setPostTo] = useState<"entire" | "individual">("entire");
-  const [selectedUsers, setSelectedUsers] = useState<string[]>([]);
+  const [selectedUsers] = useState<string[]>([]);
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
 
   useEffect(() => {
