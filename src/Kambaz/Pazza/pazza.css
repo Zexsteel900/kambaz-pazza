@@ -19,8 +19,9 @@
    Navigation Bar (Fixed at Top)
    ======================================== */
 .pazza-navbar {
+  position: sticky;
+  top: 0;
   z-index: 1030;
-  border-bottom: 1px solid #dee2e6;
 }
 
 .pazza-navbar .nav-link {
@@ -44,10 +45,8 @@
    Folders Bar (Fixed Below Navbar)
    ======================================== */
 .pazza-folders-bar {
-  position: fixed;
-  top: 56px;
-  left: 0;
-  right: 0;
+  position: sticky;
+  top: 56px;   /* Sticks just below navbar */
   z-index: 1020;
   background: #fff;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
