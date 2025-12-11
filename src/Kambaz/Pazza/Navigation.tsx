@@ -14,7 +14,7 @@ export default function Navigation() {
   const isQAActive = !location.pathname.includes("/new") && !isManageActive;
 
   return (
-    <Navbar bg="light" expand="lg" fixed="top" className="pazza-navbar shadow-sm">
+    <Navbar bg="light" expand="lg" className="pazza-navbar shadow-sm">
       <div className="container-fluid px-3">
         <Navbar.Brand 
           style={{ fontWeight: 700, fontSize: "1.5rem", color: "#dc3545" }}
